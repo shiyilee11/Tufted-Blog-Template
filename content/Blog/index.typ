@@ -181,6 +181,21 @@
   )
 ] <math>
 
+// ==================== 代码学习 ====================
+== 代码学习 <code-learning>
+
+#html.div(class: "blog-tags", [
+  #tag(<transformer-impl>, [✍️ Transformer 手写实现])
+])
+
+#series-block(title: "Transformer 手写实现", tone: "indigo")[
+  #tufted.blog-entry(
+    date: datetime(year: 2026, month: 8, day: 26),
+    path: "8-26-transformer",
+    title: "Transformer 手写实现｜Encoder 组件实现笔记：形状思维与 PyTorch 语法共性",
+  )
+] <transformer-impl>
+
 // ==================== 论文、工程与工具 ====================
 == 论文、工程与工具 <practice>
 
