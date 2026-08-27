@@ -191,7 +191,7 @@
 #series-block(title: "Transformer 手写实现", tone: "indigo")[
   #tufted.blog-entry(
     date: datetime(year: 2026, month: 8, day: 26),
-    path: "8-26-transformer",
+    path: "8-26",
     title: "Transformer 手写实现｜Encoder 组件实现笔记：形状思维与 PyTorch 语法共性",
   )
 ] <transformer-impl>
