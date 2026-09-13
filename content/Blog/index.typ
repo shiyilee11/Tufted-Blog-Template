@@ -207,7 +207,16 @@
   #tag(<methods>, [💡 学习方法])
 ])
 
+
+
 #series-block(title: "工具分享", tone: "amber")[
+  #tufted.blog-entry(
+    date: datetime(year: 2026, month: 9, day: 13),
+    path: "9-13",
+    title: "工具开发｜Tagger：极简 CSV/TSV 标注器的设计与实现",
+  )
+
+
   #tufted.blog-entry(
     date: datetime(year: 2026, month: 8, day: 19),
     path: "8-19-marp",
