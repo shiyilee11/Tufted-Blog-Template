@@ -3,17 +3,17 @@
 
 // 如需生成 RSS feed，必须填写 title、description 和 date 元数据
 #show: template.with(
-  title: "工具开发｜Tagger：一个极简 CSV/TSV 标注器的设计与实现",
-  description: "记录 CSV/TSV 标注工具 Tagger 的完整开发过程：从需求与竞品调研、标签系统与四种标注范围的产品设计、Tauri 与纯浏览器版的技术选型，到 CSV 解析、标签持久化、快捷键的实现细节，以及“故意做小”的产品定位反思。",
-  date: datetime(year: 2026, month: 9, day: 13),
-  category: "实践与工具",
+  title: "图表示 ｜在异构图谱中对Node2Vec等方式的学习",
+  description: "Node2Vec",
+  date: datetime(year: 2026, month: 10, day: 11),
+  category: "机器学习",
   lang: "zh",
 )
 
 = 图表示 ｜在异构图谱中对Node2Vec等方式的学习
 #tufted.post-meta(
   date: datetime(year: 2026, month: 9, day: 13),
-  tags: ("Node2Vec")
+  tags: ("Node2Vec","图表示学习")
 )
 #figure(caption: "论文")[
   #image("imgs/1.png", width: 40%)
