@@ -13,12 +13,12 @@
 = 图表示 ｜在异构图谱中对Node2Vec等方式的学习
 #tufted.post-meta(
   date: datetime(year: 2026, month: 9, day: 13),
-  tags: ("Node2Vec"),
+  tags: ("Node2Vec")
 )
 #figure(caption: "论文")[
   #image("imgs/1.png", width: 40%)
 ]
-#quote[
+#tufted.margin-note[
   最近看了论文，关于怎么为症状通过图谱连接得到相关的预测的基因，以及构建一个s-g 的benchmark。这一篇分享论文里面用的图向量表示方式的一些具体细节。好久没更新，打算尝试新的表示方式。食用愉快～😁
 ]
 
