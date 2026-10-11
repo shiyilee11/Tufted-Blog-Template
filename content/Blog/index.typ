@@ -47,6 +47,11 @@
 ])
 
 #series-block(title: "机器学习", tone: "blue")[
+    #tufted.blog-entry(
+    date: datetime(year: 2026, month: 10, day: 11),
+    path: "10-11",
+    title: "图表示｜在异构图谱中对Node2Vec等方式的学习",
+  )
   #tufted.blog-entry(
     date: datetime(year: 2026, month: 8, day: 6),
     path: "8-6",
