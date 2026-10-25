@@ -230,6 +230,12 @@
 ] <tools>
 
 #series-block(title: "工程实践", tone: "amber")[
+    #tufted.blog-entry(
+    date: datetime(year: 2026, month: 10, day: 25),
+    path: "10-25",
+    title: "评估系统｜关于 Benchmark 的构建以及评估标准的建立",
+  )
+
   #tufted.blog-entry(
     date: datetime(year: 2026, month: 6, day: 3),
     path: "6-3",
