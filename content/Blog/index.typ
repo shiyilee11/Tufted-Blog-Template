@@ -39,12 +39,23 @@
 == 技术学习 <learning>
 
 #html.div(class: "blog-tags", [
+  #tag(<xx>, [💻 信息论])
   #tag(<ml>, [⚙️ 机器学习])
   #tag(<transformer-architecture>, [🤖 Transformer 架构演进])
   #tag(<transformer-backprop>, [🔁 Transformer 反向传播])
   #tag(<generative-models>, [🧩 计算机视觉与生成模型])
   #tag(<math>, [📐 数学推导])
 ])
+
+#series-block(title: "信息论", tone: "blue")[
+    #tufted.blog-entry(
+    date: datetime(year: 2026, month: 11, day: 2),
+    path: "11-2",
+    title: "信息论 | 熵与信息论基础",
+  )
+
+] <xx>
+
 
 #series-block(title: "机器学习", tone: "blue")[
     #tufted.blog-entry(
