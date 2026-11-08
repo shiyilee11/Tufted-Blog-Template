@@ -38,7 +38,7 @@
   // Custom CSS and JS Scripts
   css: ("/assets/custom.css?v=20261108-2",),
   js-scripts: (),
-
+toc: true,
   content,
 ) = {
   let with-base(path) = {

@@ -3,7 +3,8 @@
 #show: template.with(
   title: "Blog",
   description: "技术学习、论文解读、项目实践与个人记录。",
-  js-scripts: ("/assets/murmurs.js",)
+  js-scripts: ("/assets/murmurs.js",),
+  toc: false
 )
 
 // 可点击的系列标签。
