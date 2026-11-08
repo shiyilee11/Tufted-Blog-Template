@@ -25,7 +25,7 @@
   },
 )
 
-= Blog #murmur-widget()
+= Blog 
 
 #quote[
   If you enjoy my blog, feel free to bookmark the site:
