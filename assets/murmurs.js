@@ -8,7 +8,7 @@
  * Loaded only on pages that render the murmur widget. Without JS, all
  * entries remain visible inside the scrollable panel (graceful fallback).
  */
-(() => {
+function initMurmurs() {
 	"use strict";
 
 	const PER_PAGE = 5;
@@ -78,4 +78,10 @@
 	pager.append(prev, info, next);
 	panel.append(pager);
 	render();
-})();
+}
+
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", initMurmurs, { once: true });
+} else {
+	initMurmurs();
+}
