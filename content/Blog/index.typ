@@ -301,6 +301,22 @@
 
 #line(length: 100%, stroke: 0.6pt)
 
+
+== 语言学习 <language>
+
+#html.div(class: "blog-tags", [
+  #tag(<jp>, [🇯🇵 日语])
+
+])
+
+#series-block(title: "日语", tone: "amber")[
+  #tufted.blog-entry(
+    date: datetime(year: 2026, month: 11, day: 5),
+    path: "11-5",
+    title: "日语 ｜ 记录五十音学习以及音调和特殊读法",
+  )
+] <jp>
+
 // ==================== 个人文件夹 ====================
 == 个人文件夹 <private>
 
