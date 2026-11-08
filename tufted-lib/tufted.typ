@@ -36,7 +36,7 @@
   footer-elements: (),
 
   // Custom CSS and JS Scripts
-  css: ("/assets/custom.css?v=20261108-1",),
+  css: ("/assets/custom.css?v=20261108-2",),
   js-scripts: (),
 
   content,

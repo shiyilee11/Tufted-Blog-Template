@@ -359,3 +359,45 @@ AUTHOR MURMURS（作者碎碎念挂件）
 		max-height: 55vh;
 	}
 }
+/* 翻页控件（由 assets/murmurs.js 生成，每页最多 5 条） */
+.murmur-pager {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.55rem;
+	padding-top: 0.6rem;
+	margin-top: 0.4rem;
+	border-top: 1px dashed var(--blog-card-border);
+}
+
+.murmur-pager-btn {
+	padding: 0.22rem 0.62rem;
+	font-size: 0.8rem;
+	line-height: 1.35;
+	color: var(--blog-tag-text);
+	background: var(--blog-tag-bg);
+	border: 1px solid var(--blog-tag-border);
+	border-radius: 999px;
+	cursor: pointer;
+	transition: opacity 120ms ease;
+}
+
+.murmur-pager-btn:hover:not(:disabled) {
+	opacity: 0.8;
+}
+
+.murmur-pager-btn:disabled {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.murmur-pager-info {
+	font-size: 0.8rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--blog-muted-text);
+}
+
+/* 分页时隐藏非当前页的条目 */
+.murmur-item[hidden] {
+	display: none;
+}

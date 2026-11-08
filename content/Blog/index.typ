@@ -3,8 +3,9 @@
 #show: template.with(
   title: "Blog",
   description: "技术学习、论文解读、项目实践与个人记录。",
+  js-scripts: ("/assets/murmurs.js",)
 )
-#murmur-widget()
+
 // 可点击的系列标签。
 #let tag(target, body) = link(target)[
   #html.span(class: "blog-tag", body)
@@ -25,7 +26,7 @@
   },
 )
 
-= Blog 
+= Blog #murmur-widget()
 
 #quote[
   If you enjoy my blog, feel free to bookmark the site:
