@@ -235,7 +235,7 @@ AUTHOR MURMURS（作者碎碎念挂件）
 
 .murmur-widget {
 	position: fixed;
-	top: 1rem;
+	top: 4.75rem;
 	right: 1.1rem;
 	z-index: 40;
 	max-width: min(430px, calc(100vw - 2.2rem));
