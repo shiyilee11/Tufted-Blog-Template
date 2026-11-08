@@ -48,6 +48,12 @@
 ])
 
 #series-block(title: "信息论", tone: "blue")[
+
+      #tufted.blog-entry(
+    date: datetime(year: 2026, month: 11, day: 8),
+    path: "11-8",
+    title: "信息论 | AEP 与熵率",
+  )
     #tufted.blog-entry(
     date: datetime(year: 2026, month: 11, day: 2),
     path: "11-2",
