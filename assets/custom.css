@@ -226,3 +226,136 @@ html:not([data-theme]) .private-folder-link {
 		min-width: 6rem;
 	}
 }
+
+
+/*******************************************************************************
+AUTHOR MURMURS（作者碎碎念挂件）
+右上角固定挂件：收起时显示最新一条，展开显示全部（<details> 实现，无需 JS）。
+*******************************************************************************/
+
+.murmur-widget {
+	position: fixed;
+	top: 1rem;
+	right: 1.1rem;
+	z-index: 40;
+	max-width: min(430px, calc(100vw - 2.2rem));
+	font-size: 0.92rem;
+}
+
+/* 收起状态：胶囊按钮 */
+.murmur-widget > summary {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-left: auto;
+	width: fit-content;
+	max-width: 100%;
+	padding: 0.45rem 0.95rem;
+	list-style: none;
+	cursor: pointer;
+	line-height: 1.4;
+	color: var(--blog-tag-text);
+	background: var(--blog-tag-bg);
+	border: 1px solid var(--blog-tag-border);
+	border-radius: 999px;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 120ms ease;
+}
+
+.murmur-widget > summary::-webkit-details-marker {
+	display: none;
+}
+
+.murmur-widget > summary:hover,
+.murmur-widget[open] > summary {
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+}
+
+.murmur-widget[open] > summary {
+	border-radius: 14px 14px 0 0;
+	border-bottom-color: transparent;
+}
+
+.murmur-title {
+	flex: none;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+/* 最新一条预览：最多一行，超出省略 */
+.murmur-latest {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	max-width: 280px;
+	opacity: 0.85;
+}
+
+.murmur-latest p {
+	margin: 0;
+	display: inline;
+}
+
+/* 展开状态：历史列表面板 */
+.murmur-panel {
+	max-height: min(420px, 60vh);
+	overflow-y: auto;
+	padding: 0.85rem 1rem;
+	line-height: 1.55;
+	background: var(--blog-card-bg);
+	border: 1px solid var(--blog-tag-border);
+	border-top: none;
+	border-radius: 0 0 14px 14px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+	backdrop-filter: blur(8px);
+}
+
+.murmur-item {
+	padding: 0.55rem 0;
+	border-bottom: 1px dashed var(--blog-card-border);
+}
+
+.murmur-item:last-child {
+	border-bottom: none;
+}
+
+.murmur-item p:has(> .murmur-date) {
+	margin: 0;
+}
+
+.murmur-item .murmur-date {
+	display: block;
+	font-size: 0.78rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--blog-muted-text);
+}
+
+.murmur-item > .murmur-body {
+	margin-top: 0.15rem;
+}
+
+.murmur-body p {
+	margin: 0;
+}
+
+.murmur-body a {
+	word-break: break-all;
+}
+
+/* 窄屏适配 */
+@media (max-width: 760px) {
+	.murmur-widget {
+		top: 0.6rem;
+		right: 0.6rem;
+		font-size: 0.85rem;
+	}
+
+	.murmur-latest {
+		max-width: 52vw;
+	}
+
+	.murmur-panel {
+		max-height: 55vh;
+	}
+}

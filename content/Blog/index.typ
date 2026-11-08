@@ -1,5 +1,5 @@
 #import "../index.typ": template, tufted
-
+#import "../../tufted-lib/murmurs.typ": murmur-widget
 #show: template.with(
   title: "Blog",
   description: "技术学习、论文解读、项目实践与个人记录。",
@@ -25,7 +25,7 @@
   },
 )
 
-= Blog
+= Blog #murmur-widget()
 
 #quote[
   If you enjoy my blog, feel free to bookmark the site:

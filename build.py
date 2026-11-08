@@ -359,6 +359,9 @@ def find_common_dependencies() -> list[Path]:
     if DRAFT_POSTS_CONFIG_FILE.exists():
         common_deps.append(DRAFT_POSTS_CONFIG_FILE)
 
+    murmurs_file = Path("tufted-lib/murmurs.typ")
+    if murmurs_file.exists():
+        common_deps.append(murmurs_file)
     # 可以在这里添加其他公共依赖
     # 例如：查找 content/_* 目录下的模板文件
     if CONTENT_DIR.exists():

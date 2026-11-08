@@ -1,4 +1,5 @@
 #import "../config.typ": template, tufted
+
 #show: template.with(
   title: "Shiyi Li Blog",
   description: "Shiyi Li 的个人网站，整理技术学习、论文阅读、项目实践与个人简介。",
