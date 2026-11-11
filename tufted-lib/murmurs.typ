@@ -92,7 +92,14 @@
 })();
 
 #let murmurs = (
+
+	  (
+		
+    date: datetime(year: 2026, month: 11, day: 11),
+    body: [信息论第三部分——编码已更新！！祝Lappy生日快乐！～🎂🐺🍇❤️],
+  ),
   (
+
     date: datetime(year: 2026, month: 11, day: 8),
     body: [信息论第二章已更新！！今天是卫戍协议回归的日子～😋],
   ),

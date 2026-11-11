@@ -53,6 +53,12 @@
 
 #series-block(title: "信息论", tone: "blue")[
 
+        #tufted.blog-entry(
+    date: datetime(year: 2026, month: 11, day: 11),
+    path: "11-11",
+    title: "信息论 | 编码与压缩理论及应用",
+  )
+
       #tufted.blog-entry(
     date: datetime(year: 2026, month: 11, day: 8),
     path: "11-8",
